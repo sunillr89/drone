@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="New Frame - Exported from UXMagic Copilot">
+    <title>New Frame</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['var(--font-heading-name)', 'sans-serif'],
+                        body: ['var(--font-body-name)', 'sans-serif'],
+                    },
+                    colors: {
+                        background: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617',
+                        },
+                        primary: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        secondary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        neutral: {
+                            50: '#fafafa',
+                            100: '#f5f5f5',
+                            200: '#e5e5e5',
+                            300: '#d4d4d4',
+                            400: '#a3a3a3',
+                            500: '#737373',
+                            600: '#525252',
+                            700: '#404040',
+                            800: '#262626',
+                            900: '#171717',
+                            950: '#0a0a0a',
+                        }
+                    },
+                    spacing: {
+                        base: 'var(--space-base)',
+                    },
+                    borderRadius: {
+                        small: 'var(--radius-small)',
+                        large: 'var(--radius-large)',
+                    },
+                    boxShadow: {
+                        custom: 'var(--shadow-custom)',
+                        'custom-hover': 'var(--shadow-custom-hover)',
+                        'glow': '0 0 20px rgba(74, 222, 128, 0.5)',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#007bff">
+    <meta name="color-scheme" content="light dark">
+    <meta name="author" content="UXMagic Copilot">
+</head>
+<body>
+    
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 glass-panel border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-small bg-primary-500 flex items-center justify-center">
+                        <i data-lucide="aperture" class="text-background-950 w-5 h-5"></i>
+                    </div>
+                    <span class="font-heading font-bold text-xl tracking-wider text-white">SKY<span class="text-primary-400">RUNNER</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#features" class="font-heading text-sm font-medium text-neutral-300 hover:text-primary-400 transition-colors">FEATURES</a>
+                        <a href="#specs" class="font-heading text-sm font-medium text-neutral-300 hover:text-primary-400 transition-colors">SPECS</a>
+                        <a href="#gallery" class="font-heading text-sm font-medium text-neutral-300 hover:text-primary-400 transition-colors">GALLERY</a>
+                        <a href="#reviews" class="font-heading text-sm font-medium text-neutral-300 hover:text-primary-400 transition-colors">REVIEWS</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <button class="bg-primary-600 hover:bg-primary-500 text-white font-heading font-bold py-2 px-6 rounded-small transition-all duration-300 shadow-glow hover:shadow-custom-hover transform hover:-translate-y-0.5">
+                        PRE-ORDER
+                    </button>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-small text-neutral-400 hover:text-white hover:bg-neutral-800 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+            <div class="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-primary-500/10 rounded-full blur-[100px]"></div>
+            <div class="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-secondary-500/10 rounded-full blur-[100px]"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&amp;w=2072&amp;auto=format&amp;fit=crop')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8 z-10">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-800/50 border border-neutral-700 backdrop-blur-sm">
+                        <span class="w-2 h-2 rounded-full bg-primary-500 animate-pulse"></span>
+                        <span class="text-xs font-heading tracking-wider text-primary-400">NEW MODEL RELEASED</span>
+                    </div>
+                    
+                    <h1 class="font-heading text-5xl sm:text-6xl lg:text-7xl font-black leading-tight tracking-tight">
+                        DEFY <br>
+                        <span class="text-gradient">GRAVITY</span>
+                    </h1>
+                    
+                    <p class="font-body text-lg text-neutral-400 max-w-lg leading-relaxed">
+                        Experience flight like never before with the SkyRunner X1. 
+                        Advanced stabilization, 8K cinematic capture, and AI-driven obstacle avoidance.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <button class="bg-primary-600 hover:bg-primary-500 text-white font-heading font-bold py-4 px-8 rounded-small transition-all duration-300 shadow-glow flex items-center justify-center gap-2 group">
+                            BUY NOW $999
+                            <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                        <button class="bg-transparent border border-neutral-700 hover:border-primary-500 text-neutral-300 hover:text-white font-heading font-bold py-4 px-8 rounded-small transition-all duration-300 flex items-center justify-center gap-2">
+                            <i data-lucide="play-circle" class="w-5 h-5"></i>
+                            WATCH REEL
+                        </button>
+                    </div>
+
+                    <div class="pt-8 flex items-center gap-8 text-neutral-500">
+                        <div class="flex flex-col">
+                            <span class="font-heading text-2xl font-bold text-white">45<span class="text-sm text-primary-500">min</span></span>
+                            <span class="text-xs uppercase tracking-wider">Flight Time</span>
+                        </div>
+                        <div class="w-px h-10 bg-neutral-800"></div>
+                        <div class="flex flex-col">
+                            <span class="font-heading text-2xl font-bold text-white">12<span class="text-sm text-primary-500">km</span></span>
+                            <span class="text-xs uppercase tracking-wider">Range</span>
+                        </div>
+                        <div class="w-px h-10 bg-neutral-800"></div>
+                        <div class="flex flex-col">
+                            <span class="font-heading text-2xl font-bold text-white">8<span class="text-sm text-primary-500">K</span></span>
+                            <span class="text-xs uppercase tracking-wider">Video</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative lg:h-[600px] flex items-center justify-center">
+                    <!-- Decorative rings -->
+                    <div class="absolute w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] border border-neutral-800 rounded-full animate-[spin_10s_linear_infinite]"></div>
+                    <div class="absolute w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] border border-neutral-800/50 rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
+                    
+                    <!-- Drone Image with Float Animation -->
+                    <img src="https://images.unsplash.com/photo-1579829366248-204fe8413f31?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" alt="SkyRunner Drone" class="relative z-20 w-full max-w-lg object-contain drop-shadow-2xl animate-float transform hover:scale-105 transition-transform duration-500">
+                         
+                    <!-- Floating UI Card -->
+                    <div class="absolute bottom-10 right-0 sm:right-10 glass-panel p-4 rounded-large z-30 animate-float" style="animation-delay: 1s;">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
+                                <i data-lucide="battery-charging" class="text-green-400 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-neutral-400 font-heading">BATTERY LEVEL</p>
+                                <p class="text-lg font-bold text-white font-heading">98%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="py-20 bg-background-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-4">ENGINEERED FOR <span class="text-primary-500">PERFORMANCE</span></h2>
+                <p class="text-neutral-400 max-w-2xl mx-auto">Every component of the SkyRunner X1 has been meticulously designed to provide the ultimate flying experience.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Feature 1 -->
+                <div class="group p-8 rounded-large bg-neutral-900 border border-neutral-800 hover:border-primary-500/50 transition-all duration-300 hover:bg-neutral-800/50">
+                    <div class="w-12 h-12 rounded-small bg-neutral-800 group-hover:bg-primary-500/20 flex items-center justify-center mb-6 transition-colors">
+                        <i data-lucide="camera" class="w-6 h-6 text-primary-500"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">8K HDR Camera</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Capture every detail with our custom-built 1-inch sensor, capable of 8K video at 60fps and 48MP stills.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="group p-8 rounded-large bg-neutral-900 border border-neutral-800 hover:border-primary-500/50 transition-all duration-300 hover:bg-neutral-800/50">
+                    <div class="w-12 h-12 rounded-small bg-neutral-800 group-hover:bg-primary-500/20 flex items-center justify-center mb-6 transition-colors">
+                        <i data-lucide="wind" class="w-6 h-6 text-primary-500"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Level 6 Wind Resistance</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Stable flight even in winds up to 50km/h, ensuring smooth footage in challenging conditions.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="group p-8 rounded-large bg-neutral-900 border border-neutral-800 hover:border-primary-500/50 transition-all duration-300 hover:bg-neutral-800/50">
+                    <div class="w-12 h-12 rounded-small bg-neutral-800 group-hover:bg-primary-500/20 flex items-center justify-center mb-6 transition-colors">
+                        <i data-lucide="shield" class="w-6 h-6 text-primary-500"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">360° Obstacle Avoidance</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">12 vision sensors create a real-time 3D map of the environment for worry-free flying.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="group p-8 rounded-large bg-neutral-900 border border-neutral-800 hover:border-primary-500/50 transition-all duration-300 hover:bg-neutral-800/50">
+                    <div class="w-12 h-12 rounded-small bg-neutral-800 group-hover:bg-primary-500/20 flex items-center justify-center mb-6 transition-colors">
+                        <i data-lucide="wifi" class="w-6 h-6 text-primary-500"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">OcuSync 4.0</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Crystal clear 1080p transmission from up to 12km away with ultra-low latency.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="group p-8 rounded-large bg-neutral-900 border border-neutral-800 hover:border-primary-500/50 transition-all duration-300 hover:bg-neutral-800/50">
+                    <div class="w-12 h-12 rounded-small bg-neutral-800 group-hover:bg-primary-500/20 flex items-center justify-center mb-6 transition-colors">
+                        <i data-lucide="cpu" class="w-6 h-6 text-primary-500"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">AI Subject Tracking</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">ActiveTrack 5.0 locks onto subjects with incredible precision, even during high-speed maneuvers.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="group p-8 rounded-large bg-neutral-900 border border-neutral-800 hover:border-primary-500/50 transition-all duration-300 hover:bg-neutral-800/50">
+                    <div class="w-12 h-12 rounded-small bg-neutral-800 group-hover:bg-primary-500/20 flex items-center justify-center mb-6 transition-colors">
+                        <i data-lucide="map" class="w-6 h-6 text-primary-500"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Waypoint Mission Pro</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Plan complex flight paths in 3D space and execute them automatically with centimeter-level accuracy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specs Section -->
+    <section id="specs" class="py-20 bg-background-950 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary-500/20 to-secondary-500/20 blur-[80px] rounded-full"></div>
+                    <img src="https://images.unsplash.com/photo-1506947411487-a56738267384?q=80&amp;w=1974&amp;auto=format&amp;fit=crop" alt="Drone Top View" class="relative z-10 w-full rounded-large shadow-2xl border border-neutral-800">
+                </div>
+                
+                <div class="w-full lg:w-1/2">
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-8">TECHNICAL <span class="text-primary-500">SPECIFICATIONS</span></h2>
+                    
+                    <div class="space-y-6">
+                        <!-- Spec Item -->
+                        <div class="flex items-center justify-between border-b border-neutral-800 pb-4">
+                            <span class="text-neutral-400 font-medium">Weight</span>
+                            <span class="text-white font-heading font-bold">895 g</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-neutral-800 pb-4">
+                            <span class="text-neutral-400 font-medium">Max Speed</span>
+                            <span class="text-white font-heading font-bold">72 km/h</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-neutral-800 pb-4">
+                            <span class="text-neutral-400 font-medium">Max Flight Time</span>
+                            <span class="text-white font-heading font-bold">45 mins</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-neutral-800 pb-4">
+                            <span class="text-neutral-400 font-medium">Camera Sensor</span>
+                            <span class="text-white font-heading font-bold">1" CMOS</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-neutral-800 pb-4">
+                            <span class="text-neutral-400 font-medium">Video Resolution</span>
+                            <span class="text-white font-heading font-bold">8K @ 30fps</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-neutral-800 pb-4">
+                            <span class="text-neutral-400 font-medium">Transmission Range</span>
+                            <span class="text-white font-heading font-bold">12 km (FCC)</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <a href="#" class="text-primary-500 hover:text-primary-400 font-heading font-bold flex items-center gap-2 group">
+                            VIEW FULL DATASHEET
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-background-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-2">CAPTURED ON <span class="text-secondary-400">SKYRUNNER</span></h2>
+                    <p class="text-neutral-400">Stunning visuals from our community of creators.</p>
+                </div>
+                <div class="hidden sm:flex gap-2">
+                    <button class="w-10 h-10 rounded-small border border-neutral-700 flex items-center justify-center text-white hover:bg-neutral-800 transition-colors">
+                        <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                    </button>
+                    <button class="w-10 h-10 rounded-small border border-neutral-700 flex items-center justify-center text-white hover:bg-neutral-800 transition-colors">
+                        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 h-[600px] sm:h-[500px]">
+                <div class="col-span-1 sm:col-span-2 lg:col-span-2 row-span-2 relative group overflow-hidden rounded-large">
+                    <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" alt="Aerial Shot 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-primary-400 font-heading text-sm mb-1">ICELAND</span>
+                        <h3 class="text-white font-bold text-xl">Volcanic Landscapes</h3>
+                    </div>
+                </div>
+                <div class="col-span-1 lg:col-span-1 row-span-1 relative group overflow-hidden rounded-large">
+                    <img src="https://images.unsplash.com/photo-1504198266287-1659872e6590?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" alt="Aerial Shot 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-primary-400 font-heading text-sm mb-1">CITYSCAPE</span>
+                        <h3 class="text-white font-bold text-lg">Urban Night</h3>
+                    </div>
+                </div>
+                <div class="col-span-1 lg:col-span-1 row-span-1 relative group overflow-hidden rounded-large">
+                    <img src="https://images.unsplash.com/photo-1465447142348-e9952c393450?q=80&amp;w=1974&amp;auto=format&amp;fit=crop" alt="Aerial Shot 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-primary-400 font-heading text-sm mb-1">NATURE</span>
+                        <h3 class="text-white font-bold text-lg">Forest Mist</h3>
+                    </div>
+                </div>
+                <div class="col-span-1 sm:col-span-2 lg:col-span-2 row-span-1 relative group overflow-hidden rounded-large">
+                    <img src="https://images.unsplash.com/photo-1527685216219-c7b48066f282?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" alt="Aerial Shot 4" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-primary-400 font-heading text-sm mb-1">COASTAL</span>
+                        <h3 class="text-white font-bold text-lg">Ocean Waves</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-primary-900/20"></div>
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517976487492-5750f3195933?q=80&amp;w=2070&amp;auto=format&amp;fit=crop')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+            <h2 class="font-heading text-4xl sm:text-5xl font-bold text-white mb-6">READY TO TAKE FLIGHT?</h2>
+            <p class="text-neutral-300 text-lg mb-10 max-w-2xl mx-auto">Join thousands of pilots capturing the world from a new perspective. Pre-order the SkyRunner X1 today and get the Pro Fly More Combo.</p>
+            
+            <form class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto mb-8">
+                <input type="email" placeholder="Enter your email" class="bg-neutral-900/80 border border-neutral-700 text-white px-6 py-4 rounded-small focus:outline-none focus:border-primary-500 w-full backdrop-blur-sm">
+                <button type="submit" class="bg-primary-600 hover:bg-primary-500 text-white font-heading font-bold px-8 py-4 rounded-small transition-colors whitespace-nowrap shadow-glow">
+                    GET UPDATES
+                </button>
+            </form>
+            
+            <p class="text-neutral-500 text-sm">Limited stock available for first batch. Shipping starts next month.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-background-950 border-t border-neutral-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 rounded-small bg-primary-500 flex items-center justify-center">
+                            <i data-lucide="aperture" class="text-background-950 w-5 h-5"></i>
+                        </div>
+                        <span class="font-heading font-bold text-xl tracking-wider text-white">SKY<span class="text-primary-400">RUNNER</span></span>
+                    </div>
+                    <p class="text-neutral-500 text-sm leading-relaxed mb-6">
+                        Pushing the boundaries of aerial technology to help you capture the world from new heights.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading text-white font-bold mb-6">PRODUCTS</h4>
+                    <ul class="space-y-4 text-sm text-neutral-400">
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">SkyRunner X1</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">SkyRunner Mini</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Pro Controller</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading text-white font-bold mb-6">SUPPORT</h4>
+                    <ul class="space-y-4 text-sm text-neutral-400">
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Warranty</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Service Plans</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Flight Safety</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading text-white font-bold mb-6">COMPANY</h4>
+                    <ul class="space-y-4 text-sm text-neutral-400">
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Newsroom</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-neutral-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-neutral-600 text-sm">© 2024 SkyRunner Tech. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-neutral-600">
+                    <a href="#" class="hover:text-neutral-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-neutral-400 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
